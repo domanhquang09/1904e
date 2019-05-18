@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Thẻ biểu mẫu form trong html</h1>
+<pre>
+   *** Thẻ form có 3 thuộc tính quan trọng
+    name : tên của form
+    method : mang 2 giá trị post hoặc get ( khi học php )
+    action : địa chỉ mà form sẽ gửi dữ liệu đến
+    *** thẻ input
+    có type="text" => văn bản
+    thẻ input có thuộc tính name( tên của input)
+    value="" ( giá trị của ô input )
+    placeholder="" ( hướng dẫn cho người dùng hiểu ô input làm gì nó sẽ xuất hiện khi mà chưa nhập
+    giá trị vào ô input đó )
+    *** thẻ label là thẻ nhãn
+    *** textarea dùng để nhập văn bản có nhiều dòng row và col
+    *** input dùng để nhập văn bản ngắn có 1 dòng
+</pre>
+<form name="register" method="post" action="">
+    <div style="padding: 10px">
+        <label>Họ tên</label>
+        <input type="text" name="name" value="" placeholder="Nhập họ tên vào đây">
+    </div>
+    <div style="padding: 10px">
+        <label>Sđt</label>
+        <input type="text" name="phone" value="" placehoder="Nhập số ĐT">
+        <button type="button"> Gửi mã xác thực</button>
+    </div>
+
+    <div style="padding: 10px">
+        <label>Mã xác thực</label>
+        <input type="text" name="code" value="">
+    </div>
+
+    <div style="padding: 10px">
+        <label>Email</label>
+        <input type="email" name="email" value="">
+    </div>
+
+    <div style="padding: 10px">
+        <label>Mật khẩu</label>
+        <input type="password" name="password" value="">
+    </div>
+
+    <div style="padding: 10px">
+        <label>Giới tính</label>
+        <input type="radio" name="gender" value="nam"> Nam
+        <input type="radio" name="gender" value="nu"> Nữ
+    </div>
+    <div style="padding: 10px">
+        <label>Ngày sinh</label>
+        <select> name="day">
+            <option value="1">Ngày 1</option>
+            <option value="2">Ngày 2</option>
+            <option value="3">Ngày 3</option>
+            <option value="4">ngày 4</option>
+            <option value="5">Ngày 5</option>
+            <option value="6">Ngày 6</option>
+            <option value="7">Ngày 7</option>
+            <option value="8">Ngày 8</option>
+            <option value="9">Ngày 9</option>
+            <option value="10">Ngày 10</option>
+            <option value="11">Ngày 11</option>
+            <option value="12">Ngày 12</option>
+            <option value="13">Ngày 13</option>
+            <option value="14">Ngày 14</option>
+            <option value="15">Ngày 15</option>
+            <option value="16">Ngày 16</option>
+            <option value="17">Ngày 17</option>
+            <option value="18">Ngày 18</option>
+            <option value="19">Ngày 19</option>
+            <option value="20">Ngày 20</option>
+            <option value="21">Ngày 21</option>
+            <option value="22">Ngày 22</option>
+            <option value="23">Ngày 23</option>
+            <option value="24">Ngày 14</option>
+            <option value="25">Ngày 25</option>
+            <option value="26">Ngày 26</option>
+            <option value="27">Ngày 27</option>
+            <option value="28">Ngày 28</option>
+            <option value="29">Ngày 29</option>
+            <option value="30">Ngày 30</option>
+            <option value="31">Ngày 31</option>
+
+        </select>
+
+        <select name="month">
+            <option value="1">tháng 1</option>
+            <option value="2">tháng 2</option>
+            <option value="3">tháng 3</option>
+            <option value="4">tháng 4</option>
+            <option value="5">tháng 5</option>
+            <option value="6">tháng 6</option>
+            <option value="7">tháng 7</option>
+            <option value="8">tháng 8</option>
+            <option value="9">tháng 9</option>
+            <option value="10">tháng 10</option>
+            <option value="11">tháng 11</option>
+            <option value="12">tháng 12</option>
+
+        </select>
+        <select name="year">
+            <option value="1991">1991</option>
+            <option value="1999">1999</option>
+            <option value="2011">2011</option>
+        </select>
+    <div style="padding: 10px">
+        <input type="checkbox" name="newsletter" value="1">
+        Nhận các thông tin và các chương trình khuyến mãi của Tiki qua email.
+    </div>
+
+    <div style="padding: 10px">
+   <input type="submit" name="submit" value="Tạo tài khoản">
+
+    </div>
+
+    <div style="padding: 10px">
+        <p>
+            Khi bạn muốn Đăng ký, bạn đã dồng ý thực hiện mọi giao dịch theo
+            <a href="#"> điều kiện sử dụng và chính sách của Tiki.</a>
+        </p>
+    </div>
+        <div style="padding: 10px">
+            <label>Ghi chú</label>
+            <textarea name="note" cols="25" rows="10"></textarea>
+        </div>
+</form>
+
+
+</body>
+</html>
